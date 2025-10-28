@@ -1,0 +1,57 @@
+.glow-btn {
+    background: linear-gradient(90deg, #0061ff, #161616);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 162, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    height: 60px;
+}
+
+.glow-btn:hover {
+    box-shadow:
+        0 0 25px rgba(0, 162, 255, 0.9),
+        0 0 50px rgba(0, 200, 255, 0.7);
+    transform: translateY(-2px) scale(1.05);
+}
+
+.glow-btn:active {
+    transform: scale(0.98);
+}
+
+.glow-ultimate {
+    /* Button base styles */
+    position: relative;
+    padding: 14px 36px;
+    font-size: 1.03rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    /* Gradient background (animated) */
+    background: linear-gradient(270deg, #0061ff, #00d8ff, #00ffa3, #ff00e0);
+    background-size: 600% 600%;
+    animation: gradientShift 6s ease infinite;
+
+    /* Glow shadow */
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.change {
+    background-color: #161616;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
