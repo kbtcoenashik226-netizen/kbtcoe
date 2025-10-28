@@ -45,7 +45,7 @@ export default function ClearWaterTank() {
         clearWaterTank: JSON.parse(localStorage.getItem("clearWaterTankResults") || "{}"),
       };
 
-      const response = await fetch("http://localhost:5000/final-report", {
+      const response = await fetch("https://backend-1-0pih.onrender.com/final-report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
