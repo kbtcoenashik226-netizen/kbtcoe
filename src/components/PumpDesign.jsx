@@ -23,7 +23,7 @@ export default function PumpDesign() {
   // 🧮 Calculation
   const calculatePumpDesign = () => {
     const q = parseFloat(form.dischargeRate);
-    const Q = parseFloat(form.requiredDischarge);
+    const Q = parseFloat(form.requiredDischarge); 
     const V = parseFloat(form.velocity);
     const n = parseInt(form.standbyPumps);
     const H = parseFloat(form.suctionHead);
@@ -43,6 +43,7 @@ export default function PumpDesign() {
       Np: Math.ceil(Np),
       Nt: Math.ceil(Nt),
       S: S.toFixed(2),
+      H: H.toFixed(2)
     };
 
     setResults(output);

@@ -15,7 +15,7 @@ export default function RapidMix() {
     powerrate: "",
     motor: "",
   });
-  
+
   const [results, setResults] = useState(null);
   const setField = (name, value) =>
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -57,6 +57,7 @@ export default function RapidMix() {
       no,
       HP: HP.toFixed(3),
       d: d.toFixed(3),
+      H: H.toFixed(2)
     };
 
     setResults(results);

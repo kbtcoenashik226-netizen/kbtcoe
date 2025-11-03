@@ -51,6 +51,11 @@ export default function IntakeWellForm() {
       Ah: Ah.toFixed(3),
       oneScreenArea: oneScreenArea.toFixed(3),
       h: h.toFixed(3),
+      
+      d1: form.depthBelow,
+      d2: form.depthAbove,
+      D: form.intakeDiameter,
+      dia: form.maxPipeDiameter
     }));
   };
 
